@@ -1,0 +1,1 @@
+The collected 'SMS Spam Collection Dataset' is used for SMS Spam investigation. To classify the data set, we change the text into a Bag of word feature (Bow) through Sklearn’s Countvectorizer. Create and train a model with a Support Vector Machine (SVM)![image](https://user-images.githubusercontent.com/62230550/165440737-a4532455-374f-42eb-b608-43b654c5d884.png)
