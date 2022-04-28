@@ -1,5 +1,5 @@
 # 2021.MachineLearning.TermProjects
-Term Project in Machine Learning Lecture, 2021
+Term Projects in Machine Learning Lecture, 2021
 
 ## Contained Projects
 * [Depression Prediction Project using EMA dataset](https://github.com/piso7/2021.MachineLearning.TermProjects/tree/main/DepressionPredictionProject)
