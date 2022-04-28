@@ -1,8 +1,12 @@
-Using EMA (Ecological Momentary Assessment) data, it is used as learning data for predicting depression in Dartmouth students.
+# Prediction of Depression Using EMA Data
+<img src="https://user-images.githubusercontent.com/62230550/165677200-10d05900-ca85-40c8-8653-e6faf5992ac6.png  width="200" height="100"/>
 
-First, preprocessing is performed by parsing the response of the raw data, which is the survey result.
+* This dataset is data collected over a period of time for students at Dartmouth College.
+* To obtain this dataset, the researchers distributed smart phones to students and conducted an Ecological Instantaneous Assessment (EMA) at the same time as collecting sensor data.
+* In this project, students' responses to various Ecological Momentary Assessment (EMA) responses are used to predict students' depression.
+* More information about the datasets associated with EMA can be found [Student life Dataset](https://studentlife.cs.dartmouth.edu/dataset.html)
 
-Second, Statistical-based features are extracted from preprocessed data.
 
-Finally, we create and train the model with a Support Vector Machine (SVM).
-![image](https://user-images.githubusercontent.com/62230550/165440934-0506cf6d-a17c-4fff-a7e2-d6c8c6260c35.png)
+## The purpose of a project  
+Real raw data processing and extracting significant features from the processed data. 
+
