@@ -12,14 +12,21 @@ Extract 'Sleep', 'Social', and 'Activity' data from the survey response json fil
 
 ## Step 2. Feature Extraction
 <img src="https://user-images.githubusercontent.com/62230550/165681127-ee398d0c-6e7c-4c29-bd62-b71e5609ea0c.png"  width="50%" height="50%"/>
-Extract statistical features from the previously parsed EMA response data.  
+Extract statistical features from the previously parsed EMA response data.   
+
 * Data is divided among trian/test users based on the previously added user id (uid).  
 * Then, statistical features are extracted from the user's data using the describe function provided by pandas.  
 
+Fill in the missing values of the data with the average value using the imputer.  
 <img src="https://user-images.githubusercontent.com/62230550/165681895-27653da8-54e7-4e69-8ce9-881034df2337.png"  width="70%" height="70%"/>
-Fill in the missing values of the data with the average value using the imputer.
 
-## Step 3. Model training
+## Step 3. Model training and prediction
+![image](https://user-images.githubusercontent.com/62230550/165683463-bb0416e0-6209-4391-84d3-8600c09c1fc7.png)
+
+* Depression prediction using only the sleep feature  
+* Depression prediction using only the activity features
+* Depression prediction using only the social features
+* Depression prediction using all features
 
 ## Conclusion
 * It can be confirmed that depression classification with better performance is possible by fusion of features extracted from various EMA data.
