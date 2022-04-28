@@ -1,4 +1,6 @@
 # Prediction of Depression Using EMA Data => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/DepressionPredictionProject/kkw-ml-teamproject_1.ipynb)
+The project was conducted on the KAGGLE platform.  
+
 <img src="https://user-images.githubusercontent.com/44772344/109740272-5c9b4c80-7c0e-11eb-8ab6-1d7d71542c2e.png"  width="50%" height="50%"/>
 
 * This dataset is data collected over a period of time for students at Dartmouth College.
