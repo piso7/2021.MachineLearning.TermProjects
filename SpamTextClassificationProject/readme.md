@@ -1,4 +1,4 @@
-# Prediction of Depression Using EMA Data => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/DepressionPredictionProject/kkw-ml-teamproject_1.ipynb)
+# Prediction of Depression Using EMA Data => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/SpamTextClassificationProject/kkw-ml-termproject-2.ipynb)
 The project was conducted on the KAGGLE platform.  
 
 This project uses [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
