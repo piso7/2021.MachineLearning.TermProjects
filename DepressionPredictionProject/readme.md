@@ -1,5 +1,5 @@
 # Prediction of Depression Using EMA Data
-<img src="https://user-images.githubusercontent.com/62230550/165677200-10d05900-ca85-40c8-8653-e6faf5992ac6.png  width="200" height="100"/>
+<img src="https://user-images.githubusercontent.com/44772344/109740272-5c9b4c80-7c0e-11eb-8ab6-1d7d71542c2e.png"  width="50%" height="50%"/>
 
 * This dataset is data collected over a period of time for students at Dartmouth College.
 * To obtain this dataset, the researchers distributed smart phones to students and conducted an Ecological Instantaneous Assessment (EMA) at the same time as collecting sensor data.
