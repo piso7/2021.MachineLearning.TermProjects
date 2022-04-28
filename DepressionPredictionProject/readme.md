@@ -4,9 +4,23 @@
 * This dataset is data collected over a period of time for students at Dartmouth College.
 * To obtain this dataset, the researchers distributed smart phones to students and conducted an Ecological Instantaneous Assessment (EMA) at the same time as collecting sensor data.
 * In this project, students' responses to various Ecological Momentary Assessment (EMA) responses are used to predict students' depression.
-* More information about the datasets associated with EMA can be found [Student life Dataset](https://studentlife.cs.dartmouth.edu/dataset.html)
+* More information about the datasets associated with EMA can be found [Student life Dataset](https://studentlife.cs.dartmouth.edu/dataset.html).
 
+## Step 1. Data Preprocessing
+<img src="https://user-images.githubusercontent.com/62230550/165679392-0161d263-3c51-4057-9a87-90d085329276.png"  width="50%" height="50%"/>
+Extract 'Sleep', 'Social', and 'Activity' data from the survey response json file and parse the actual values into index values.
 
-## The purpose of a project  
-Real raw data processing and extracting significant features from the processed data. 
+## Step 2. Feature Extraction
+<img src="https://user-images.githubusercontent.com/62230550/165681127-ee398d0c-6e7c-4c29-bd62-b71e5609ea0c.png"  width="50%" height="50%"/>
+Extract statistical features from the previously parsed EMA response data.  
+* Data is divided among trian/test users based on the previously added user id (uid).  
+* Then, statistical features are extracted from the user's data using the describe function provided by pandas.  
 
+<img src="https://user-images.githubusercontent.com/62230550/165681895-27653da8-54e7-4e69-8ce9-881034df2337.png"  width="70%" height="70%"/>
+Fill in the missing values of the data with the average value using the imputer.
+
+## Step 3. Model training
+
+## Conclusion
+* It can be confirmed that depression classification with better performance is possible by fusion of features extracted from various EMA data.
+* Through this, the performance difference according to the actual feature representation can be confirmed.
