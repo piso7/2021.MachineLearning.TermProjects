@@ -12,15 +12,14 @@ This project uses [MVTecAD(1) Dataset](https://www.mvtec.com/company/research/da
 <img src="https://user-images.githubusercontent.com/62230550/165718327-f1e99fd4-1714-430f-ab1e-fba80052d67e.png"  width="50%" height="50%"/>
 <img src="https://user-images.githubusercontent.com/62230550/165718493-01fee9c2-688c-44bd-b623-47a84fe3c40c.png"  width="50%" height="50%"/>
 
-## Step 1. Text Data Preprocessing
+##############################
+## Step 1. Reconstruction based anomaly detection
 * Remove non-text objects such as emojis or numbers and dots.
 * Make words lowercase: The machine treats the same word with different case as different words.
 * Stopword Removal: Stopwords are words that do not affect the importance of text in text classification. (ex: the, we, a , will)
 * Stem: The Bag of Word model i will use in this project will be affected by more frequent occurrences of words. Several words with the same meaning (ex: runnable, running , is run) have been changed to the same.
 
-## Step 2. Feature Extraction
-### Bag of Word(BoW)
-<img src="https://user-images.githubusercontent.com/62230550/165708737-ed40df29-824e-432f-ac68-b87187a2266f.png"  width="50%" height="50%"/>
+## Step 2. Embedding feature based anomaly detection
 
 * Get all the words in all texts, count the number of occurrences of each word, and select a specific word (Cluster Word) that occurs most frequently.  
 * Assuming that a total of 1000 cluster words are selected, the number of occurrences of these 1000 words becomes a feature of the classification problem.
