@@ -1,4 +1,4 @@
-# Anomaly Detection Project => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/SpamTextClassificationProject/kkw-ml-termproject-2.ipynb)
+# Anomaly Detection Project => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/AnomalyDetectionProject/17011805-4.ipynb)
 The project was conducted on the KAGGLE platform.  
 
 Anomaly detection refers to finding objects or materials in data that exhibit a different pattern than expected.  
