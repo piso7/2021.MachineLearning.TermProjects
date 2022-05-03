@@ -12,21 +12,17 @@ This project uses [MVTecAD(1) Dataset](https://www.mvtec.com/company/research/da
 <img src="https://user-images.githubusercontent.com/62230550/165718327-f1e99fd4-1714-430f-ab1e-fba80052d67e.png"  width="50%" height="50%"/>
 <img src="https://user-images.githubusercontent.com/62230550/165718493-01fee9c2-688c-44bd-b623-47a84fe3c40c.png"  width="50%" height="50%"/>
 
-##############################
 ## Step 1. Reconstruction based anomaly detection
-* Remove non-text objects such as emojis or numbers and dots.
-* Make words lowercase: The machine treats the same word with different case as different words.
-* Stopword Removal: Stopwords are words that do not affect the importance of text in text classification. (ex: the, we, a , will)
-* Stem: The Bag of Word model i will use in this project will be affected by more frequent occurrences of words. Several words with the same meaning (ex: runnable, running , is run) have been changed to the same.
+* Using PCA, the main components of train data composed of normal images are extracted, and the dimension of train data is reduced to n_component size by feature f (feature extraction)
+* Extract feature f_test with PCA applied in before step on test data containing normal/abnormal images
+* Restore feature f_test
+* Extract the score by obtaining the difference between the original image and the restored image
 
 ## Step 2. Embedding feature based anomaly detection
-
-* Get all the words in all texts, count the number of occurrences of each word, and select a specific word (Cluster Word) that occurs most frequently.  
-* Assuming that a total of 1000 cluster words are selected, the number of occurrences of these 1000 words becomes a feature of the classification problem.
-* Classification proceeds by learning the classifier with the extracted features.
-* Use CountVectorizer provided by Sklearn.
+* Extraction of normal image feature f using randomized PCA.
+* Use one-class SVM to learn the support vector of f.
+* Extracts the randomized PCA abnormal/normal image feature f_ts used in before step.
+* One-class SVM classifies normal/abnormal with f_ts included in the normal distribution boundary.
 
 ## Step 3. Model training and prediction
-* For this project, I used SVM, which is said to work best with BoW.  
-
-![image](https://user-images.githubusercontent.com/62230550/165713812-acc48664-d1f2-4e96-bae4-e4961db070fc.png)
+![image](https://user-images.githubusercontent.com/62230550/166520019-071b48c2-991d-4e4e-9f26-5021e86379f3.png)
