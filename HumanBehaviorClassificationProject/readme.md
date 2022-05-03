@@ -1,4 +1,4 @@
-# Human Behavior Classification Project => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/AnomalyDetectionProject/17011805-4.ipynb)
+# Human Behavior Classification Project => [Full Code](https://github.com/piso7/2021.MachineLearning.TermProjects/blob/main/HumanBehaviorClassificationProject/fork-of-17011805-5.ipynb)
 The project was conducted on the KAGGLE platform.  
 
 One of the ways to use video to classify behavior is to use a classifier to judge behavior by representing a video with a feature (=1D vector).
